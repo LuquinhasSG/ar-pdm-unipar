@@ -1,18 +1,21 @@
 package com.example.uniparar.model;
 
 public class Product {
-    private float photo;
+
     private String name;
     private String description;
     private String price;
+    private int photo;
+
+    public Product(String name, String description, String price, int photo){
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.photo = photo;
+    }
 
 
     // Getter Methods
-
-    public float getPhoto() {
-        return photo;
-    }
-
     public String getName() {
         return name;
     }
@@ -25,12 +28,11 @@ public class Product {
         return price;
     }
 
-    // Setter Methods
-
-    public void setPhoto(float photo) {
-        this.photo = photo;
+    public int getPhoto() {
+        return photo;
     }
 
+    // Setter Methods
     public void setName(String name) {
         this.name = name;
     }
@@ -41,5 +43,9 @@ public class Product {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public void setPhoto(int photo) {
+        this.photo = photo;
     }
 }

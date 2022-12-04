@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/productDetailsPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:srcCompat="@drawable/gabinete"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <TextView
+        android:id="@+id/productDetailsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SSD SanDisk Plus 480GB"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/productDetailsDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Confiável, rápido e muita capacidade. A SanDisk, pioneira em tecnologias de armazenamento de estado sólido é a marca de confiança dos profissionais da área, oferece maior velocidade e desempenho com o SanDisk SSD Plus."
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/productDetailsPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="R$ 900,00"
+        android:textColor="@color/purple_500"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>
