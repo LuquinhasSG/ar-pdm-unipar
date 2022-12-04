@@ -1,6 +1,8 @@
 package com.example.uniparar;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        RecyclerView recyclerView_products = findViewById(R.id.recyclerView_products);
+        recyclerView_products.setLayoutMode(1);
+        recyclerView_products.setHasFixedSize(true);
     }
 
     @Override
